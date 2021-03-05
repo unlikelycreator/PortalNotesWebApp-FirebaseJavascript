@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<style>
+	body {
+  background: linear-gradient(90deg, #161122 21px, transparent 1%) center, linear-gradient(#161122 21px, transparent 1%) center, #a799cc;
+  background-size: 22px 22px;
+}
+	
+
+</style>
+</head>
+<body>
+	<header class="text-gray-900 body-font">
+		<div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+		  <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+			
+		  </nav>
+		  <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-100 lg:items-center lg:justify-center mb-4 md:mb-0">
+			<!svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+			  <!path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></!path><img src="logo.svg" height="64px" width="64px">
+			</!svg>
+			<span class="ml-3 text-xl">PORTAL NOTES</span>
+		  </a>
+		  <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+			
+		  </div>
+		</div>
+	  </header>
+	  
+
+<section class="text-gray-700 body-font">
+
+		<h1 class="flex flex-col text-center w-full text-2xl font-medium title-font text-gray-100">SIGN-IN / SIGN-UP   </h1>
+
+	<div class="container px-5 py-24 mx-auto">
+	  <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+		
+		<div id="firebaseui-auth-container"></div>
+	  <div id="loader">Loading...</div>
+	  <script type="text/javascript" src="firebase.js"></script>
+	  <script type="text/javascript" src="login.js"></script>
+		<span class="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+		<h2 class="text-gray-100 font-medium title-font tracking-wider text-sm">PORTAL NOTES</h2>
+		<p class="text-gray-300">Please read T&C , Privacy Policy Before Proceeding</p>
+	  </div>
+	</div>
+  </section>
+
+
+</body>
+</html>

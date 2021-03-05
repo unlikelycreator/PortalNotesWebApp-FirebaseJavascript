@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTALNOTES</title>
+    <link rel="stylesheet" href="note.css">
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='container1'>
+            <h2>Add Notes</h2>
+            <br><br>
+            <form id='reviewForm'>
+                <input type="hidden" id='hiddenId' />
+                <input type="text" id='fullName' placeholder="Add Title" />
+                <br/>
+                <textarea id='message' placeholder="Add Content"></textarea>
+                <br/>
+
+                <button type='submit'>Save</button>
+            </form>
+        </div>
+        <div class='container2'>
+            <h4>READ/DELETE</h4>
+            <ul id='reviews' style="width: 300px; height: 100%; overflow:auto"></ul>
+        </div>
+    </div>
+
+    <script src="note.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script type="text/javascript" src="firebase.js"></script>
+</body>
+
+</html>
